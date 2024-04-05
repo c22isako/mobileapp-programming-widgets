@@ -20,6 +20,9 @@ LinearLayout
 
 
 
+
+
+
 Lade till en png genom att gå in på View > Tool windows > Resource manager, och drog sedan in png:n till fönstret.
 Efter detta skrev jag in pngs filväg (innehållande namnet) i ImageView, genom kodraden nedan. Notera att namnet är art.
 ```
