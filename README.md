@@ -19,21 +19,14 @@ LinearLayout
 
 
 
+
+Lade till en png genom att gå in på View > Tool windows > Resource manager, och drog sedan in png:n till fönstret.
+Efter detta skrev jag in pngs filväg (innehållande namnet) i ImageView, genom kodraden nedan. Notera att namnet är art.
 ```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
+app:srcCompat="@drawable/art"
 ```
+
+
 
 Bilder läggs i samma mapp som markdown-filen.
 
