@@ -79,7 +79,7 @@ android:background="#99D9EA"
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+![](aSimpleSpringPage.png)
 
 Läs gärna:
 
