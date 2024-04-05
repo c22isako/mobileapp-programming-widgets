@@ -10,16 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="#99D9EA"
         tools:ignore="MissingConstraints">
 
         <Button
-
+            android:background="#68A7BD"
+            android:textColor="@android:color/white"
             android:shape="oval"
             android:id="@+id/theButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints"
-            android:text="Potatis"
+            android:text="Gör till vår"
         />
         <EditText
             android:id="@+id/editText"
@@ -43,6 +45,18 @@
             android:paddingRight="1dp"
             android:text="this is text view nr2"
             tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+            android:layout_marginTop="140dp"
+            android:contentDescription="En rosa blomma"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/art" />
 
     </LinearLayout>
 
