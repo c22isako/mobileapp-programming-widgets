@@ -25,7 +25,24 @@ Lade till en LinearLayout via kodraden nedan.
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 ```
-Lade till en button via
+Lade till en knapp via "<Button", vilket gav mig ett par options. Dessa bygdes på under projektets gång, där de markanta kodraderna
+kan sägas vara de nedan (notera att det finns mer kod till knappen). Här flyttar vi knappen till "mitten", ändrar dess bakgrund till blått,
+Sätter text-färgen i knappen till vit, samt ger knappen ett id.
+```
+            android:layout_marginHorizontal="150dp"
+            android:background="#68A7BD"
+            android:textColor="@android:color/white"
+            android:id="@+id/theButton"
+```
+Detta id:t används sedan i MainActivity för att registrera knapptryck via en 
+listener. (for the sake of future implementation)
+```
+springButton.setOnClickListener(new View.OnClickListener() { ... }
+```
+
+Lade till en inteagerbar text-flik, genom "<EditText". Även här använde jag mig utav margin för att 
+
+
 
 Lade till en png genom att gå in på View > Tool windows > Resource manager, och drog sedan in png:n till fönstret.
 Efter detta skrev jag in pngs filväg (innehållande namnet) i ImageView, genom kodraden nedan. Notera att namnet är art.
