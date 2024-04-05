@@ -17,20 +17,26 @@ Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad d�
 
 LinearLayout
 
-
-
-
-
-
+Lade till en LinearLayout via kodraden nedan.
+```
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+```
+Lade till en button via
 
 Lade till en png genom att gå in på View > Tool windows > Resource manager, och drog sedan in png:n till fönstret.
 Efter detta skrev jag in pngs filväg (innehållande namnet) i ImageView, genom kodraden nedan. Notera att namnet är art.
 ```
 app:srcCompat="@drawable/art"
 ```
-
-
-
+Då Bilden och appens bakgrund inte passade, passade jag även på att ändra bakgrundsfärg på appen genom att lägga till kodraden
+nedan till LinearLayout.
+```
+android:background="#99D9EA"
+```
 Bilder läggs i samma mapp som markdown-filen.
 
 ![](android.png)
