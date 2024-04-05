@@ -14,6 +14,8 @@
         tools:ignore="MissingConstraints">
 
         <Button
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="150dp"
             android:background="#68A7BD"
@@ -40,9 +42,6 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:layout_margin="5dp"
-            android:paddingTop="1dp"
-            android:paddingLeft="1dp"
-            android:paddingRight="1dp"
             android:text="this is text view nr2"
             tools:ignore="MissingConstraints" />
 
