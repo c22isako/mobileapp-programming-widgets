@@ -21,8 +21,10 @@
             android:background="#68A7BD"
             android:textColor="@android:color/white"
             android:id="@+id/theButton"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             tools:ignore="MissingConstraints"
             android:text="Gör till vår" />
 
@@ -40,26 +42,30 @@
             android:inputType="text" />
 
         <TextView
-
+            android:id="@+id/TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
+
             android:text="ajiwdijawijd iajodwij awijdo awdoi aijowdij koaodoijwaiojdioa woijdij
             auwdhiuawhudihuaiwhud awodoawjoidijawjio adiwjoi awijoij awijdao "
+
             android:layout_marginTop="30dp"
             android:layout_marginHorizontal="80dp"
             tools:ignore="MissingConstraints" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView"
             android:layout_width="410dp"
             android:layout_height="410dp"
             android:layout_marginTop="40dp"
             android:contentDescription="En rosa blomma"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+
             app:srcCompat="@drawable/art" />
 
     </LinearLayout>

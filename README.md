@@ -1,9 +1,5 @@
 
 # Rapport
-Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
-
-LinearLayout
-
 Ändrade namn på appen via kodraden nedan, funnen i strings.xml
 ```
     <string name="app_name">Vår</string>
@@ -18,7 +14,7 @@ och faller därmed under dess regler.
         tools:ignore="MissingConstraints">
 ```
 Lade till en knapp via "<Button", vilket gav mig ett par options. Dessa bygdes på under projektets gång, där de markanta kodraderna
-kan sägas vara de nedan (notera att det finns mer kod till knappen). Här flyttar vi knappen till "mitten", ändrar dess bakgrund till blått,
+kan sägas vara de nedan (notera att det finns mer kod till knappen). Här flyttas knappen 150dp horisontellt, ändrar dess bakgrund till blått,
 Sätter text-färgen i knappen till vit, samt ger knappen ett id.
 ```
             android:layout_marginHorizontal="150dp"
@@ -26,18 +22,16 @@ Sätter text-färgen i knappen till vit, samt ger knappen ett id.
             android:textColor="@android:color/white"
             android:id="@+id/theButton"
 ```
-Notera kodraden i MainActivity.java, som skapar knappen som vi sedan använder i MainActivity (som en activation)
+Notera kodraden i MainActivity.java, som skapar objekt-knappen som vi sedan använder i MainActivity (som en activation)
+Id:t från knappen används sedan i MainActivity för att registrera knapptryck via en 
+listener. (for the sake of future implementation)
+
 ```
 Button springButton = findViewById(R.id.theButton);
-```
-Detta id:t används sedan i MainActivity för att registrera knapptryck via en 
-listener. (for the sake of future implementation)
-```
 springButton.setOnClickListener(new View.OnClickListener() { ... }
 ```
-
 Lade till en inteagerbar text-flik, genom "<EditText". Även här använde jag mig utav margin för att sätta textfältet i 
-"mitten" utav skärmen. notera att kodraden nedan är inkluderad endast för att varningarna störde mig, men i verkligheten
+"mitten" utav skärmen (flyttar dock bara dem horisontellt). Notera att kodraden nedan endast är inkluderad för att lösa varningar, men i verkligheten
 används den för att berätta för autocorrection vilken information som den ska ge.
 ```
 android:autofillHints="view."
